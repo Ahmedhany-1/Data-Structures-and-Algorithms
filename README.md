@@ -4,7 +4,7 @@ This repository contains my implementations, and problem solutions from my DSA c
 
 ## 📁 Structure
 
-- `Implementations/`: Code implementations for various data structures.
+- `Implementations/`: Code implementations for various data structures and Algorithms.
 - `Problems/`: Solutions to problems from platforms like LeetCode, Codeforces, etc.
 - `ToDo.md`: List of topics to cover and problems to solve.
 
