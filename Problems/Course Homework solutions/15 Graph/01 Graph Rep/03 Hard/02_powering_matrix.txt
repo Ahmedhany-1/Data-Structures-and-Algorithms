@@ -1,0 +1,33 @@
+If advanced for you, ignore it :)
+
+Assume M is binary adjacency matrix for a directed Graph
+M[i][j] = 1 if there is a at least single edge between i, j
+
+When we compute the matrix C = M^2
+C[i][j] = The number of paths between i and j that consists of 2 edges!
+
+Why?
+Assume for some k: M[i][k] = 1 and M[k][j] = 1
+The matrix multiplication will sum for us M[i][k] * M[k][j]
+So for every node K where (i=>k and k=>j) 1 is added to M[i][j]
+
+Generalization:
+C = M^k = The number of paths between i and j that consists of k edges!
+	In the homework example: if we computed M^10, C will be zeros
+		as there is no path with 10 edges
+
+Tip: C[i][i] can tell us if there is a cycle passing with i with length K
+
+What about undirected graphs?
+	The same logic, but paths won't be simple
+	E.g. a non simple path: 1-2-3-1-4-5-1-6-7-1   (as u see nodes are repeated)
+	
+	Generally, only in DAG the paths will be simple
+	
+
+Seniors: we can adjust the matrix M, such that C=M^k is the number of edges of At most K edges.
+
+
+Please: play with more graphs and verify. 
+Note: I am recalling these observations from 2007 during competitive programming :D. 
+	Verify :)
