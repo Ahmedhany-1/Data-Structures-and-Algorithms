@@ -1,7 +1,7 @@
-#include<iostream>
-#include<vector>
-#include<unordered_set>
+#include "bits/stdc++.h"
 using namespace std;
+#define ll long long
+#define get_shit_done freopen("in.txt", "r", stdin), freopen("out.txt", "w", stdout); 
 
 typedef vector<unordered_set<int>> GRAPH;
 
@@ -25,10 +25,12 @@ void print_adjaceny_matrix(GRAPH &graph) {
 }
 
 int main() {
+	get_shit_done
+
 	int nodes, edges;
 	cin >> nodes >> edges;
 
-	GRAPH graph(nodes);	// observe: empty lists
+	GRAPH graph(nodes);	
 
 	for (int e = 0; e < edges; ++e) {
 		int from, to;

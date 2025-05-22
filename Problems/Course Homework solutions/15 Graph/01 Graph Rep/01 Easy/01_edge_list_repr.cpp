@@ -1,71 +1,59 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
+#include "bits/stdc++.h"
 using namespace std;
+#define ll long long
+#define get_shit_done freopen("in.txt", "r", stdin), freopen("out.txt", "w", stdout); 
 
 struct edge {
-	int from, to, weight;
+    int from;
+    int to;
+    int cost;
 
-	edge(int from, int to, int weight): from(from), to(to), weight(weight) {}
+    edge(int from, int to, int cost = 0) : from(from), to(to), cost(cost) {}
 
-	bool operator < (const edge & e) const {
-		return weight < e.weight;
-	}
+    bool operator < (const edge& e) const {
+        return cost < e.cost;
+    }
 
-	void print() {
-		cout<<"Edge ("<<from<<" "<<to<<" "<<weight<<")\n";
-	}
+    void print() {
+        cout << "There is an edge between " << from << " and " << to << " with cost: " << cost << endl;
+    }
+
 };
 
 typedef vector<edge> GRAPH;
-
-void add_edge(GRAPH &graph, int from, int to, int cost) {
-	graph.push_back({from, to, cost});
+void add_edge(GRAPH& graph, int from, int to, int cost) {
+    graph.emplace_back(from, to, cost);
 }
 
-void print_adjaceny_matrix(GRAPH &graph) {
-	for (int edge = 0; edge < (int)graph.size(); ++edge)
-		graph[edge].print();
+void print_adjaceny_matrix(GRAPH& graph) {
+    for (int edge = 0; edge < (int)graph.size(); ++edge)
+        graph[edge].print();
 }
 
 int main() {
-	int nodes, edges;
-	cin >> nodes >> edges;
+    get_shit_done;
+    GRAPH g;
+    add_edge(g, 3, 2, 5);
+    add_edge(g, 0, 1, 5);
+    add_edge(g, 2, 1, 4);
+    add_edge(g, 4, 1, 9);
+    add_edge(g, 5, 2, 6);
 
-	GRAPH graph;
-
-	for (int e = 0; e < edges; ++e) {
-		int from, to, cost;
-		cin >> from >> to >> cost;
-		add_edge(graph, from, to, cost);
-	}
-	sort(graph.begin(), graph.end());
-	print_adjaceny_matrix(graph);
-	return 0;
+    sort(g.begin(), g.end());
+    print_adjaceny_matrix(g);
 }
 
 /*
 
-6 7
-2 1 10
-2 5 20
-2 0 77
-2 3 33
-0 5 45
-1 4 60
-5 4 10
+There is an edge between 2 and 1 with cost: 4
+There is an edge between 3 and 2 with cost: 5
+There is an edge between 0 and 1 with cost: 5
+There is an edge between 5 and 2 with cost: 6
+There is an edge between 4 and 1 with cost: 9
 
-Output
-Edge (2 1 10)
-Edge (5 4 10)
-Edge (2 5 20)
-Edge (2 3 33)
-Edge (0 5 45)
-Edge (1 4 60)
-Edge (2 0 77)
-
-
+Time complexity is O(E)
 Space Complexity is O(E)
-Time Complexity for ALL operations is O(E)
- */
 
+
+
+*/
