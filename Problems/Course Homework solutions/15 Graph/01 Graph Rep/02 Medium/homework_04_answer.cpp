@@ -29,14 +29,13 @@ int main() {
 	int nodes, edges;
 	cin >> nodes >> edges;
 
-	GRAPH graph(nodes);	// observe: empty lists
+	GRAPH graph(nodes);	
 
 	for (int e = 0; e < edges; ++e) {
 		int from, to;
 		cin >> from >> to;
 		add_directed_edge(graph, from, to);
 	}
-	//print_adjaceny_matrix(graph);
 
 	int queries;
 	cin >> queries;

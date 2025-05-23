@@ -31,7 +31,7 @@ int main() {
 
 	cin >> rows >> cols;
 
-	GRAPH graph(rows * cols);	// observe: empty lists
+	GRAPH graph(rows * cols);	
 
 	int nr, nc, to;
 	for (int r = 0; r < rows; ++r) {
@@ -53,9 +53,6 @@ int main() {
 			nr = r, nc = c - 1, to = nr * cols + nc;
 			if (isValid(nr, nc, rows, cols))
 				add_directed_edge(graph, from, to);
-
-			// later we will see a more elegant way than these copy-paste lines
-			// Feel free to try
 		}
 	}
 	print_adjaceny_matrix(graph);

@@ -27,7 +27,7 @@ int main() {
 	int nodes, edges;
 	cin >> nodes >> edges;
 
-	GRAPH graph(nodes);	// observe: empty lists
+	GRAPH graph(nodes);	
 
 	for (int e = 0; e < edges; ++e) {
 		int from, to;
