@@ -16,11 +16,11 @@
 
 ```
 📁 DSA-Journey/
-├── 🏗️ Implementations/          # Core data structures & algorithms
-├── 🧩 Problems/                 # Coding challenge solutions
-│   ├── Easy/                   # Beginner-friendly problems
-│   ├── Medium/                 # Intermediate challenges  
-│   └── Hard/                   # Advanced problem solving
+├── 🏗️ Implementations/         # Core data structures & algorithms
+├── 🧩 Problems/                # Coding challenge solutions
+│   ├── Easy/                   
+│   ├── Medium/                  
+│   └── Hard/                  
 └── 📝 ToDo.md                  # Learning roadmap
 ```
 
