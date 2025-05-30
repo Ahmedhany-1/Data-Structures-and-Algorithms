@@ -1,28 +1,80 @@
-# Data Structures and Algorithms
+# 🚀 Data Structures & Algorithms Journey
 
-This repository contains my implementations, and problem solutions from my DSA courses.
+<div align="center">
 
-## 📁 Structure
+![DSA Banner](https://img.shields.io/badge/DSA-Journey-blue?style=for-the-badge&logo=leetcode)
+![Language](https://img.shields.io/badge/C++-Solutions-00599C?style=for-the-badge&logo=cplusplus)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-- `Implementations/`: Code implementations for various data structures and Algorithms.
-- `Problems/`: Solutions to problems from platforms like LeetCode, Codeforces, etc.
-- `ToDo.md`: List of topics to cover and problems to solve.
+*Master the art of problem-solving through elegant code*
 
-## 📌 Topics Covered
+</div>
 
-- Vector
-- Linked List (Singly, Doubly, Circular)
-- Stacks
-- Queue (Normal, Circular, Deque, Priority Queue)
-- Trees (Binary Tree, BST, Heap, Trie, AVL)
-- Hash Tables
-- Sorting (Heap, Selection, Insertion, Counting, Merge, Quick)
-- Searching Algorithms (Binary Search, Ternary Search)
-- Two Pointers Technique
-- Sliding Window Technique
-- Graphs (BFS, DFS, Topological)
-- Graphs (Dijkstra, Floyed, BellmanFord, MST, Prim, Kruskal)
-- Dynamic Programming(Memoization, Brute-Force, Ranges, Digit, Counting, Tabulation)
-- Backtracking
-- Devide and Conquer
-- Disjoint Set Union (DSU)
+---
+
+## 📂 Repository Structure
+
+```
+📁 DSA-Journey/
+├── 🏗️ Implementations/         # Core data structures & algorithms
+├── 🧩 Problems/                # Coding challenge solutions
+│   ├── Easy/                   
+│   ├── Medium/                  
+│   └── Hard/                  
+└── 📝 ToDo.md                  # Learning roadmap
+```
+
+## 🎯 What's Inside
+
+### 📚 **Data Structures**
+
+| Structure | Description | Time Complexity |
+|-----------|-------------|-----------------|
+| **Vector** | Dynamic arrays with automatic resizing | Access: O(1) |
+| **Linked List** | Connected nodes (Single, Double, Circular) | Insert: O(1) |
+| **Stack & Queue** | LIFO and FIFO data management | Push/Pop: O(1) |
+| **Trees** | Hierarchical data (BST, Heap, Trie, AVL) | Search: O(log n) |
+| **Hash Tables** | Key-value mapping with fast lookup | Average: O(1) |
+
+### ⚡ **Algorithms**
+
+**Sorting & Searching:**
+- Binary Search, Ternary Search
+- Merge Sort, Quick Sort, Heap Sort
+- Selection Sort, Insertion Sort, Counting Sort
+
+**Advanced Techniques:**
+- Two Pointers & Sliding Window
+- Dynamic Programming (Memoization, Tabulation)
+- Backtracking & Divide and Conquer
+- Graph Algorithms (BFS, DFS, Dijkstra, Floyd-Warshall)
+- Minimum Spanning Tree (Prim, Kruskal)
+
+
+## 💡 Key Features
+
+- ✅ **Clean Code**: Well-commented and readable implementations
+- ✅ **Optimized**: Focus on time and space complexity
+- ✅ **Interview Ready**: Common technical interview problems
+- ✅ **Educational**: Step-by-step explanations included
+- ✅ **Tested**: All solutions are verified and working
+
+<div align="center">
+
+  | Platform |
+|----------|
+| 🟢 **LeetCode** | 
+| 🔵 **Codeforces** |
+| 🟡 **HackerRank** | 
+
+</div>
+
+---
+
+<div align="center">
+
+**⭐ Star this repo if it helped you learn! ⭐**
+
+*Happy Coding! 🚀*
+
+</div>
